@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="datos.js"></script>
+  <title>Formulario Registro</title>
+</head>
+<body>
+  
+  <form id="form-register" >
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="text" name="edad" id="edad" placeholder="Ingrese su edad">
+
+    <label class="  sexos">Sexo: </label><br><br>
+    <label><input class="sexos" type="radio" name="sexo" id="masculino" value="masculino">Masculino</label><br>
+    <label><input class="sexos" type="radio" name="sexo" id="femenino" value="fen">Femenino</label><br><br>
+    <label><input class="sexos" type="checkbox" id="egresado">¿Egresado?</label><br><br>
+
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="button" value="Registrar" onclick="guardar()">
+    
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+  </form>
+  <script src="./main.js"></script>
+</body>
+</html>
