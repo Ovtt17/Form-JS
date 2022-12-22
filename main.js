@@ -25,5 +25,5 @@ function saveData() {
         password: password
     }
     console.log(data);
-    
+    document.getElementById("form-register").reset();   
 }
