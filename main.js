@@ -5,7 +5,7 @@ function saveData() {
     const firstName = document.querySelector('#name').value;
     const lastName = document.querySelector('#lastName').value;
     const age = document.querySelector('#age').value;
-    const sex= document.querySelector("input[name='sex']:checked").value;
+    const sex= document.querySelector("input[name='sex']:checked");
     const graduated = document.querySelector('#graduated').value;
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
