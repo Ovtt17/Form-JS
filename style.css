@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
-  /* background-image: url('fondo.jpg'); */
   background: linear-gradient(180.8deg, #0f0a0a 16.69%, hwb(216 8% 23%) 100%);
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 #form-register h4 {
-  font-size: 22px;
+  font-size: 2.2rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -37,17 +38,20 @@ body {
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
   font-family: 'calibri';
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
 }
 
 #form-register p {
   height: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.6rem;
   line-height: 40px;
 }
 
+label {
+  font-size: 1.6rem;
+}
 #form-register a {
   color: white;
   text-decoration: none;
@@ -65,7 +69,7 @@ body {
   padding: 12px;
   color: white;
   margin: 16px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   cursor: pointer;
 }
@@ -73,4 +77,11 @@ body {
 #form-register .sexos{
   padding: 10px 10px 10px;
   margin: 10px;
+}
+
+@media (max-width: 740px) {
+  #form-register {
+    width: 90%;
+    height: 100%;
+  }  
 }
