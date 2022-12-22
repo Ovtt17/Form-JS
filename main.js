@@ -1,27 +1,27 @@
-var arregloDatos= Array();
+const firstName = document.querySelector('#name').value;
+const lastName = document.querySelector('#lastName').value;
+const age = document.querySelector('#age').value;
+const maleSex = document.querySelector('#male').value;
+const femaleSex = document.querySelector('#female').value;
+const graduated = document.querySelector('#graduated').value;
+const email = document.querySelector('#email').value;
+const password = document.querySelector('#password').value;
 
-function guardar(){
-    
-    let nombres= document.getElementById("nombres").value;
-    let apellidos= document.getElementById("apellidos").value;
-    let correo = document.getElementById("correo").value;
-    let contraseña= document.getElementById("password").value;
-    let edad= document.getElementById("edad").value;
-    let sexo= document.querySelector("input[name='sexo']:checked").value;
-    let egresado= document.getElementById("egresado").value;
-    
-    let nuevoElemento= {
-        "nombres": nombres,
-        "apellidos": apellidos,
-        "correo": correo,
-        "contraseña": contraseña, 
-        "edad": edad,
-        "sexo": sexo,
-        "egresado": egresado,         
+const btnSubmit = document.querySelector('.botons');
+
+btnSubmit.addEventListener('click', saveData);
+
+function saveData() {
+    console.log("everything is ok");
+    let data = [];          
+    data.push = {
+        name: firstName,
+        lastName: lastName,
+        age: age,
+        sex: maleSex,
+        graduated: graduated,
+        email: email,
+        password: password
     }
-        arregloDatos.push(nuevoElemento);
-        document.getElementById("form-register").reset();
-        alert("Datos guardados con exito");
-        
-        console.log(nuevoElemento);
+    console.log(data);
 }
