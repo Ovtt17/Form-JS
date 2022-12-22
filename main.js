@@ -2,19 +2,19 @@ const btnSubmit = document.querySelector('.botons');
 btnSubmit.addEventListener('click', saveData);
 
 function saveData() {
-    let firstName = document.querySelector('#name').value;
-    let lastName = document.querySelector('#lastName').value;
-    let age = document.querySelector('#age').value;
-    let sexo= document.querySelector("input[name='sexo']:checked").value;
-    let graduated = document.querySelector('#graduated').value;
-    let email = document.querySelector('#email').value;
-    let password = document.querySelector('#password').value;
+    const firstName = document.querySelector('#name').value;
+    const lastName = document.querySelector('#lastName').value;
+    const age = document.querySelector('#age').value;
+    const sex= document.querySelector("input[name='sex']:checked").value;
+    const graduated = document.querySelector('#graduated').value;
+    const email = document.querySelector('#email').value;
+    const password = document.querySelector('#password').value;
 
-    let data = {
+    const data = {
         name: firstName,
         lastName: lastName,
         age: age,
-        sex: sexo,
+        sex: sex,
         graduated: graduated,
         email: email,
         password: password
